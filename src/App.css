@@ -14,7 +14,7 @@ body {
 }
 
 .app {
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 1.5rem;
   flex: 1;
@@ -60,7 +60,7 @@ body {
 .stats { display: flex; gap: 10px; margin-bottom: 1rem; flex-wrap: wrap; }
 .stat {
   background: #fff; border-radius: 10px;
-  padding: 12px 18px; flex: 1; min-width: 110px;
+  padding: 12px 18px; flex: 1; min-width: 100px;
   border: 1px solid #eee;
   box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
@@ -71,6 +71,27 @@ body {
 .stat-val {
   font-size: 26px; font-weight: 700;
   margin-top: 2px; color: #185FA5;
+}
+
+/* ── Page Banner ── */
+.page-banner {
+  background: #EBF3FC; border: 1px solid #b0d0f0;
+  border-radius: 10px; padding: 12px 16px;
+  margin-bottom: 1rem; display: flex;
+  align-items: flex-start; gap: 10px;
+  flex-wrap: wrap;
+}
+.page-banner-icon { font-size: 18px; margin-top: 1px; }
+.page-banner strong {
+  font-size: 13px; color: #185FA5;
+  display: block; margin-bottom: 6px;
+}
+.page-banner span { display: flex; flex-wrap: wrap; gap: 6px; }
+.page-pill {
+  background: #185FA5; color: #fff;
+  padding: 3px 10px; border-radius: 99px;
+  font-size: 11px; font-weight: 600;
+  white-space: nowrap;
 }
 
 /* ── Filter Box ── */
@@ -86,7 +107,7 @@ body {
 }
 .filter-group {
   display: flex; flex-direction: column;
-  gap: 4px; flex: 1; min-width: 160px;
+  gap: 4px; flex: 1; min-width: 150px;
 }
 .filter-group.full { flex: 0 0 100%; }
 .filter-group label {
@@ -140,7 +161,7 @@ body {
 }
 table {
   width: 100%; border-collapse: collapse;
-  font-size: 12.5px; min-width: 1050px;
+  font-size: 12.5px; min-width: 1100px;
 }
 thead th {
   background: #f4f6f9; padding: 11px 12px;
@@ -161,7 +182,8 @@ tbody td {
 td.empty        { color: #ccc; }
 td.email-cell   { color: #185FA5; }
 td.sl-cell      { color: #aaa; font-size: 12px; }
-td.summary-cell { font-size: 12px; color: #555; max-width: 260px; }
+td.summary-cell { font-size: 12px; color: #555; max-width: 240px; }
+td.page-cell    { text-align: center; }
 
 /* ── Badges ── */
 .badge {
@@ -171,6 +193,15 @@ td.summary-cell { font-size: 12px; color: #555; max-width: 260px; }
 .badge-high { background: #EAF3DE; color: #3B6D11; }
 .badge-med  { background: #FAEEDA; color: #854F0B; }
 .badge-low  { background: #FCEBEB; color: #A32D2D; }
+
+/* ── Page Badge ── */
+.page-badge {
+  display: inline-block;
+  background: #E6F1FB; color: #185FA5;
+  padding: 3px 10px; border-radius: 99px;
+  font-size: 11px; font-weight: 700;
+  white-space: nowrap;
+}
 
 /* ── Empty State ── */
 .empty-state {
